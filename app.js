@@ -12,6 +12,9 @@ app.get('/branches', (req, res) => {
             return res.status(500).send(`Error al obtener ramas: ${stderr}`);
         }
         const branches = stdout.split('\n').filter(branch => branch);
+        if (branches.length === 0) {
+            return res.status(404).send('No se encontraron ramas.');
+        }
         res.json({ branches });
     });
 });
