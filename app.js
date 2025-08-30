@@ -14,7 +14,7 @@ app.get('/branches', (req, res) => {
             return res.status(500).send(`Error al obtener ramas: ${stderr}`);
         }
         // Dividir la salida en ramas y filtrar líneas vacías
-        const branches = stdout.split('\n').filter(branch => branch);
+        const branches = stdout.split('\n').filter(branch => branch.trim());
         // Verificar si no hay ramas
         if (branches.length === 0) {
             return res.status(404).send('No se encontraron ramas.');
