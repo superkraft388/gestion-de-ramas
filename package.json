@@ -1,0 +1,12 @@
+{
+  "name": "gestion-de-ramas",
+  "version": "1.0.0",
+  "description": "Una herramienta simple para gestionar y visualizar ramas de desarrollo en proyectos de Git utilizando la metodología de 'feature-branching'.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
