@@ -1,12 +1,15 @@
+/* Estilo base del cuerpo */
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
 }
 
+/* Estilo del encabezado principal */
 h1 {
     color: #333;
 }
 
+/* Estilo para la sección de ramas */
 #branches {
     margin-top: 20px;
 }
